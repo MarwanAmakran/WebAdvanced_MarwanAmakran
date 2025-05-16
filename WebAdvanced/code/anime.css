@@ -1,0 +1,91 @@
+/* Google Font */
+body {
+  margin: 0;
+  font-family: 'Play', sans-serif;
+  background-color: #f1f2f6;
+  color: #222;
+  padding: 1rem;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #e63946, #1d3557);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Zoekformulier */
+form {
+  margin-top: 1rem;
+}
+
+form input {
+  padding: 0.7rem;
+  width: 300px;
+  border: 2px solid #1d3557;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+form button {
+  padding: 0.7rem 1.2rem;
+  background-color: #457b9d;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #1d3557;
+}
+
+/* Grid layout */
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+
+/* Responsive fallback */
+@media (max-width: 1000px) {
+  .anime-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+/* Anime card styling */
+.anime-card {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.anime-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.anime-card h3 {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.anime-card p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
